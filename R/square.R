@@ -3,6 +3,7 @@
 #' That's it -- this function just squares a vector.
 #'
 #' @param x The vector to be squared.
+#' @param plot_it A logical switch. If TRUE then a quick plot of the power function is created.
 #'
 #' @return A vector that is the square of \code{x}.
 #'
@@ -19,7 +20,7 @@
 #' }
 #'
 #' @examples
-#' square(1:10)
+#' square(1:10, plot_it = TRUE)
 #' square(-5)
 #' @export
-square <- function(x) pow(x, a = 2)
+square <- function(x, plot_it = FALSE) pow(x, a = 2, plot_it = plot_it)

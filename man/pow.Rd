@@ -4,12 +4,14 @@
 \alias{pow}
 \title{Take a vector to arbitrary power}
 \usage{
-pow(x, a = 2)
+pow(x, a = 2, plot_it)
 }
 \arguments{
 \item{x}{The vector to be exponentiated.}
 
 \item{a}{The exponent.}
+
+\item{plot_it}{A logical. If TRUE then a quick plot of the power function is created.}
 }
 \value{
 A vector that is the \code{a}-th exponent of \code{x}.

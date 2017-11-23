@@ -4,10 +4,12 @@
 \alias{square}
 \title{Square a vector}
 \usage{
-square(x)
+square(x, plot_it = FALSE)
 }
 \arguments{
 \item{x}{The vector to be squared.}
+
+\item{plot_it}{A logical switch. If TRUE then a quick plot of the power function is created.}
 }
 \value{
 A vector that is the square of \code{x}.
@@ -28,6 +30,6 @@ Here are some reasons why putting a list in this section is excessive:
 }
 }
 \examples{
-square(1:10)
+square(1:10, plot_it = TRUE)
 square(-5)
 }

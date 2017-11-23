@@ -11,12 +11,19 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "README-"
 )
-library(powers)
 ```
 
 # powers
 
 This folder contains an R package called "powers". The functions in this package are a convenient way of taking numbers to various powers. The functions themselves can be found in the "R" folder. See the inst/doc folder for a useful vignette that explains some example usage for this package.
+
+## Installation
+
+You can install powers from github with:
+```{r}
+
+```
+
 
 ## Example
 

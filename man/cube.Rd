@@ -4,10 +4,12 @@
 \alias{cube}
 \title{Cube a vector}
 \usage{
-cube(x)
+cube(x, plot_it = FALSE)
 }
 \arguments{
 \item{x}{The vector to be cubed.}
+
+\item{plot_it}{A logical switch. If TRUE then a quick plot of the power function is created.}
 }
 \value{
 A vector that is the cube of \code{x}.
@@ -19,6 +21,6 @@ That's it -- this function just cubes a vector.
 This function isn't complicated. It simply cubes the vector. The input may be a single number or a vector of numbers.
 }
 \examples{
-cube(1:10)
+cube(1:10, plot_it = TRUE)
 cube(-5)
 }

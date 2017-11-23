@@ -15,5 +15,5 @@ This package isn't actually meant to be serious. It's just for
 teaching purposes.
 }
 \author{
-Vincenzo Coia
+Hayden Scheiber
 }
