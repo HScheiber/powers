@@ -1,0 +1,15 @@
+Package: powers
+Type: Package
+Title: Simple computation of powers
+Version: 0.1.0
+Authors@R: person("Hayden", "Scheiber", email = "scheiber@chem.ubc.ca", 
+  role = c("aut", "cre"))
+Description: A library of power functions such as square, cube, etc.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
