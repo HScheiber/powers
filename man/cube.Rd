@@ -4,23 +4,35 @@
 \alias{cube}
 \title{Cube a vector}
 \usage{
-cube(x, plot_it = FALSE)
+cube(x, plot_it = FALSE, returnVal = TRUE, returnPlot = FALSE)
 }
 \arguments{
 \item{x}{The vector to be cubed.}
 
 \item{plot_it}{A logical switch. If TRUE then a quick plot of the power function is created.}
+
+\item{returnVal}{A logical switch. If \code{TRUE} then the a vector of cubed inputs is returned. \code{TRUE} by default, but useful if you only wish to plot the input.}
+
+\item{returnPlot}{A logical switch. If \code{TRUE} then the function plot is returned as part of the output object.}
 }
 \value{
-A vector that is the cube of \code{x}.
+A vector that is the cube of \code{x}, this output can be supressed with \code{returnVal}. Option to also return a plot object with \code{returnPlot}.
 }
 \description{
-That's it -- this function just cubes a vector.
+This function accepts inputs of numerical, logical, or character data. It then finds the cube of the input. There is also an option to plot the resulting output.
 }
 \details{
-This function isn't complicated. It simply cubes the vector. The input may be a single number or a vector of numbers.
+The function output depends on what inputs are used. In the case of numeric or logical data, the output will simply be the cube of the input.
+
+In the case of characters, the output will be the input character but with each component of the vector repeated thrice.
+For character inputs, the plot_it switch does not have any effect.
+
+By selecting \code{returnPlot = TRUE} then the output will contain a plot object. In the case of character vectors, no plot is generated and the plot object is empty.
 }
 \examples{
-cube(1:10, plot_it = TRUE)
-cube(-5)
+plot_object <- cube(1:20, plot_it = TRUE, returnVal = FALSE, returnPlot = TRUE)
+cube(-2)
+cube(TRUE)
+cube(letters)
+cube("hello world")
 }

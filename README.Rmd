@@ -9,30 +9,66 @@ output:
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "inst/extdata/README-"
 )
 ```
 
-# powers
+# Powers
 
-This folder contains an R package called "powers". The functions in this package are a convenient way of taking numbers to various powers. The functions themselves can be found in the "R" folder. See the inst/doc folder for a useful vignette that explains some example usage for this package.
+This folder contains an R package called "powers". The functions in this package are a convenient way of taking numbers to various powers, and plotting the result. The functions are also capable of taking strings to arbitrary "powers" which just means to repeat them in this context. The functions themselves can be found in the "R" folder. See the inst/doc folder for a useful vignette that explains some example usage for this package. Below is a list of all external functions:
+
+- pwr: This function takes inputs to an arbitrary power
+
+- reciprocal: This function takes inputs to the -1 power.
+
+- cube: This function takes inputs to the 3rd power.
+
+- square: This function takes inputs to the 2nd power.
+
+The package also contains two variables: `tenvec` and `negtenvec`. These are vectors of numbers from 1 to 10 or -1 to -10, useful for testing.
 
 ## Installation
 
 You can install powers from github with:
-```{r}
-
+```
+install_github("HScheiber/powers")
 ```
 
+## Examples
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to solve a common problem, squaring a number:
 
 ```{r example}
 powers::square(1:10)
 ```
 
+We can plot a function using the input switches:
+
+```{r example2}
+plot_object <- powers::square(1:20, plot_it = TRUE, returnVal = FALSE, returnPlot = TRUE)
+```
+
+It is even possible to use these functions on character data:
+
+```{r example3}
+powers::cube(letters)
+```
+
+The `reciprocal` function takes the -1 power of numerics, and reverses the direction of characters:
+```{r example4}
+powers::reciprocal(1:20, plot_it = TRUE)
+
+powers::reciprocal("Hello world")
+```
+
+If the user feels the need to take any arbitrary power and plot the result, that is also possible in this package using the `a` input of the `pwr` function:
+```{r example5}
+powers::pwr(1:20, a = 5, plot_it = TRUE)
+
+powers::pwr("Hello world", a = -2)
+```
+
+
 ## For developers
 
-The pow.R function is an internal function that all external functions in this package depend on. It takes an input number or vector to an arbitrary power. Please build any new functions for this package by utilizing the pow.R function.
+The pow.R function is an internal function that all external functions in this package depend on. It takes an input number or vector to an arbitrary power. Please build any new functions for this package by utilizing the `pow.R` function.

@@ -4,14 +4,14 @@
 \name{tenvec}
 \alias{tenvec}
 \title{Integer vector from 1 to 10}
-\format{This (and the next) is a new tag that applies for data documentation.}
+\format{Numeric vector.}
 \source{
-Note that you shouldn't use the `@export` tag when documenting data!
+This data was built from the R function call `seq(1,10,1)`.
 }
 \usage{
 tenvec
 }
 \description{
-Self-explanatory!
+Self-explanatory. It is simply a vector of numbers from 1 to 10, useful for testing the powers library.
 }
 \keyword{datasets}

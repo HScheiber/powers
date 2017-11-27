@@ -17,17 +17,54 @@ You can easily square or cube numerical data.
 ```{r}
 square(2)
 cube(3.5)
+reciprocal(0.5)
 ```
 
 The functions in this package can also be used to take vectors of numbers to powers.
 ```{r}
 square(1:10)
 cube(1:10)
+reciprocal(1:10)
 ```
 
 The functions also work on logical data, coercing it to numerical data.
 ```{r}
 square(TRUE)
 cube(FALSE)
+reciprocal(FALSE)
 ```
 
+You might be wondering why anyone would use these functions over the basic `^` function. These functions also have a plotting capability!
+Using the switch `plot_it = TRUE` any of the `powers` functions can be made to output a plot of the input vector vs its power (different for every function).
+You can also output the plot as an object using `returnPlot = TRUE`. The last input, `returnVal = FALSE` allows you to supress the raw output of numbers or characters.
+
+For example:
+```{r}
+my_plot <- square(1:20, plot_it = TRUE, returnVal = FALSE, returnPlot = TRUE)
+```
+
+
+To make a plot of any arbitrary power, use the `pwr` function:
+For example, taking the 5th power:
+```{r}
+my_plot2 <- pwr(1:20, a = 5, plot_it = TRUE, returnVal = FALSE, returnPlot = TRUE)
+```
+
+The `powers` functions also work on character data! These functions generall works as follows:
+
+- Taking the positive power of some string ouputs that string repeated a number of times equivalent to the absolute value of the exponent, separated by spaces in the output. For example:
+```{r}
+pwr("This text should repeat thrice.", a = 3)
+```
+
+- Taking the zeroth power of a string outputs only the first character of that string. For example:
+```{r}
+pwr("The output of this should be T", a = 0)
+```
+
+- Taking negative powers of a string will first reverse the order of the input string, and then repeat this reversed string. For example:
+```{r}
+pwr("Hello World", a = -3)
+```
+
+That's all there is to it really! I hope this vignette has been informative for you. The library is completely free to use by anyone, just include the license when exporting. Cheers!

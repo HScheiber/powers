@@ -4,20 +4,25 @@
 \alias{pow}
 \title{Take a vector to arbitrary power}
 \usage{
-pow(x, a = 2, plot_it)
+pow(x, a, plot_it, returnVal, returnPlot)
 }
 \arguments{
 \item{x}{The vector to be exponentiated.}
 
 \item{a}{The exponent.}
 
-\item{plot_it}{A logical. If TRUE then a quick plot of the power function is created.}
+\item{plot_it}{A logical. If \code{TRUE} then a plot of the power function is created.}
+
+\item{returnVal}{A logical. If \code{TRUE} then the squared values are returned. Generally \code{TRUE} by default for functions that depend on this one.}
+
+\item{returnPlot}{A logical. If \code{TRUE} then the generated plot is returned as an object. If both \code{returnVal} and \code{returnPlot} are \code{TRUE} then the output is a list containing both.}
 }
 \value{
-A vector that is the \code{a}-th exponent of \code{x}.
+In the case of a numerical input, a vector that is the \code{a}-th exponent of \code{x} is returned.
+For strings, the input string is repeated code{|a|} times. If \code{a} is negative, the order of the input string \code{x} is also reversed.
 }
 \description{
-INTERNAL FUCTION used by powers library. Takes vector to arbitrary power.
+Internal function used by the powers library. Takes vector to an arbitrary power, and may plot the function if indicated.
 }
 \details{
 This function is for internal use only. Other functions in the \code{powers} library depend on this.
