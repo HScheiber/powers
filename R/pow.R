@@ -13,6 +13,7 @@
 #'
 #' @details
 #' This function is for internal use only. Other functions in the \code{powers} library depend on this.
+#' @import ggplot2 stringr
 pow <- function(x, a, plot_it, returnVal, returnPlot) {
 
 	# Vector Input must be numeric, logical, or string
@@ -77,16 +78,16 @@ pow <- function(x, a, plot_it, returnVal, returnPlot) {
 											call. = FALSE)
 		}
 
-		# If input is not a numerical or logical
+		# If input is a numerical or logical
 	}else{
 		res <- x^a
 
 		# Generate the plot
 			tag <- bquote('f(x) ='~x^{.(a)})
 
-			dat <- data.frame("x" = x, fx = res)
+			dat <- data.frame("x.values" = x, "y.values" = res)
 
-			pplot <- ggplot2::ggplot(dat, ggplot2::aes(x = x, y = fx)) +
+			pplot <- ggplot2::ggplot(dat, ggplot2::aes_string(x = "x.values", y = "y.values")) +
 				ggplot2::geom_point() +
 				ggplot2::theme_bw() +
 				ggplot2::theme(axis.text.x = ggplot2::element_text(size=12,face ="bold"),

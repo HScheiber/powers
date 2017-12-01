@@ -2,8 +2,8 @@
 title: "Powers Package Vignette"
 author: "Hayden Scheiber"
 date: "`r Sys.Date()`"
-r_check_args: "--no-vignettes"
 output: rmarkdown::pdf_document
+r_check_args: "--no-build-vignettes"
 vignette: >
   %\VignetteIndexEntry{Powers Package Vignette}
   %\VignetteEngine{knitr::rmarkdown}

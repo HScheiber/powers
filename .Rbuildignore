@@ -2,4 +2,4 @@
 ^\.Rproj\.user$
 ^README\.Rmd$
 ^README-.*\.png$
-^vignettes$
+^vignettes/i_get_built\.Rmd$
