@@ -14,6 +14,7 @@
 #' @details
 #' This function is for internal use only. Other functions in the \code{powers} library depend on this.
 #' @import ggplot2 stringr
+#' @seealso \code{\link{pwr}}, \code{\link{square}}, \code{\link{cube}}, \code{\link{reciprocal}}, \code{\link{tenvec}}, \code{\link{negtenvec}}
 pow <- function(x, a, plot_it, returnVal, returnPlot) {
 
 	# Vector Input must be numeric, logical, or string

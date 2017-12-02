@@ -36,3 +36,6 @@ square(TRUE)
 square(letters)
 square("hello world")
 }
+\seealso{
+\code{\link{pwr}}, \code{\link{cube}}, \code{\link{reciprocal}}, \code{\link{tenvec}}, \code{\link{negtenvec}}
+}

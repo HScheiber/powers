@@ -27,3 +27,6 @@ Internal function used by the powers library. Takes vector to an arbitrary power
 \details{
 This function is for internal use only. Other functions in the \code{powers} library depend on this.
 }
+\seealso{
+\code{\link{pwr}}, \code{\link{square}}, \code{\link{cube}}, \code{\link{reciprocal}}, \code{\link{tenvec}}, \code{\link{negtenvec}}
+}

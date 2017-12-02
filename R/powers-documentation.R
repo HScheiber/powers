@@ -14,6 +14,7 @@
 #' @note This package isn't actually meant to be serious. It's just for
 #' learning purposes.
 #' @docType package
+#' @seealso \code{\link{pwr}}, \code{\link{square}}, \code{\link{cube}}, \code{\link{reciprocal}}, \code{\link{tenvec}}, \code{\link{negtenvec}}
 NULL
 
 ## quiets concerns of R CMD check re: the .'s that appear in pipelines

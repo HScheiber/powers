@@ -23,6 +23,7 @@
 #' square(TRUE)
 #' square(letters)
 #' square("hello world")
+#' @seealso \code{\link{pwr}}, \code{\link{cube}}, \code{\link{reciprocal}}, \code{\link{tenvec}}, \code{\link{negtenvec}}
 #' @export
 square <- function(x, plot_it = FALSE, returnVal = TRUE, returnPlot = FALSE) {
 	pow(x, a = 2, plot_it = plot_it, returnVal = returnVal, returnPlot = returnPlot)

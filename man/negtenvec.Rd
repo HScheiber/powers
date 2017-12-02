@@ -14,4 +14,7 @@ negtenvec
 \description{
 Self-explanatory. It is simply a vector of numbers from -10 to -1, useful for testing the powers library.
 }
+\seealso{
+\code{\link{pwr}}, \code{\link{square}}, \code{\link{cube}}, \code{\link{reciprocal}}, \code{\link{tenvec}}
+}
 \keyword{datasets}

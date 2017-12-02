@@ -14,4 +14,7 @@ tenvec
 \description{
 Self-explanatory. It is simply a vector of numbers from 1 to 10, useful for testing the powers library.
 }
+\seealso{
+\code{\link{pwr}}, \code{\link{square}}, \code{\link{cube}}, \code{\link{reciprocal}}, \code{\link{negtenvec}}
+}
 \keyword{datasets}

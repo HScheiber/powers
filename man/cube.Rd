@@ -36,3 +36,6 @@ cube(TRUE)
 cube(letters)
 cube("hello world")
 }
+\seealso{
+\code{\link{pwr}}, \code{\link{square}}, \code{\link{reciprocal}}, \code{\link{tenvec}}, \code{\link{negtenvec}}
+}

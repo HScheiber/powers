@@ -39,3 +39,6 @@ reciprocal(TRUE)
 reciprocal(letters)
 reciprocal("hello world")
 }
+\seealso{
+\code{\link{square}}, \code{\link{cube}}, \code{\link{reciprocal}}, \code{\link{tenvec}}, \code{\link{negtenvec}}
+}

@@ -4,4 +4,5 @@
 #'
 #' @format Numeric vector.
 #' @source This data was built from the R function call `seq(1,10,1)`.
+#' @seealso \code{\link{pwr}}, \code{\link{square}}, \code{\link{cube}}, \code{\link{reciprocal}}, \code{\link{negtenvec}}
 "tenvec"

@@ -25,6 +25,7 @@
 #' reciprocal(TRUE)
 #' reciprocal(letters)
 #' reciprocal("hello world")
+#' @seealso \code{\link{square}}, \code{\link{cube}}, \code{\link{reciprocal}}, \code{\link{tenvec}}, \code{\link{negtenvec}}
 #' @export
 pwr <- function(x, a, plot_it = FALSE, returnVal = TRUE, returnPlot = FALSE) {
 

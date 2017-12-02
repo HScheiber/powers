@@ -23,6 +23,7 @@
 #' cube(TRUE)
 #' cube(letters)
 #' cube("hello world")
+#' @seealso \code{\link{pwr}}, \code{\link{square}}, \code{\link{reciprocal}}, \code{\link{tenvec}}, \code{\link{negtenvec}}
 #' @export
 cube <- function(x, plot_it = FALSE, returnVal = TRUE, returnPlot = FALSE) {
 	pow(x, a = 3, plot_it = plot_it, returnVal = returnVal, returnPlot = returnPlot)
